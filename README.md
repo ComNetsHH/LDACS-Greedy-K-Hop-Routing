@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10995594.svg)](https://doi.org/10.5281/zenodo.10995594)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10995656.svg)](https://doi.org/10.5281/zenodo.10995656)
 
 # LDACS-Greedy-K-Hop-Routing
 
