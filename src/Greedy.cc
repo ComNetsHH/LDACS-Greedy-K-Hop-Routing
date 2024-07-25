@@ -1337,7 +1337,7 @@ L3Address Greedy::findGreedyRoutingNextHop(const L3Address& destination, GreedyO
         double neighborDistance = destinationPosition.distance(neighborPosition); // distance of the current neighbor to the destination
         if (neighborDistance < bestDistance) {
             EV_INFO << "We found someone in 3-hop: " << neighborAddress << endl;
-            auto oneHopNeighbor = neighborPositionTable.getTwoHopNeighborViaAddress(neighborAddress);
+            auto oneHopNeighbor = neighborPositionTable.getThreeHopNeighborViaAddress(neighborAddress);
             Coord oneHopNeighborPosition = neighborPositionTable.getOneHopNeighborPosition(oneHopNeighbor);
             double oneHopNeighborDistance = selfPosition.distance(oneHopNeighborPosition);
             if (oneHopNeighborDistance < commRange - forwardingRadiusReduction) {
@@ -1354,7 +1354,7 @@ L3Address Greedy::findGreedyRoutingNextHop(const L3Address& destination, GreedyO
         double neighborDistance = destinationPosition.distance(neighborPosition); // distance of the current neighbor to the destination
         if (neighborDistance < bestDistance) {
             EV_INFO << "We found someone in 4-hop: " << neighborAddress << endl;
-            auto oneHopNeighbor = neighborPositionTable.getTwoHopNeighborViaAddress(neighborAddress);
+            auto oneHopNeighbor = neighborPositionTable.getFourHopNeighborViaAddress(neighborAddress);
             Coord oneHopNeighborPosition = neighborPositionTable.getOneHopNeighborPosition(oneHopNeighbor);
             double oneHopNeighborDistance = selfPosition.distance(oneHopNeighborPosition);
             if (oneHopNeighborDistance < commRange - forwardingRadiusReduction) {
