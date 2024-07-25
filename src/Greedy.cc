@@ -1,6 +1,5 @@
 // The LDACS Greedy K-Hop Routing implements the greedy routing algorithm with a subset of k-hop neighborhood.
-// Copyright (C) 2024  Musab Ahmed, Konrad Fuger, Koojana Kuladinithi, Andreas Timm-Giel, Institute of Communication Networks, Hamburg University of Technology, Hamburg, Germany
-//
+// Copyright (C) 2024  Musab Ahmed, Institute of Communication Networks, Hamburg University of Technology, Hamburg, Germany
 // This file is derived from work originally developed by Levente Meszaros.
 // Original Source: https://github.com/inet-framework/inet/tree/master/src/inet/routing/gpsr
 //
