@@ -16,16 +16,9 @@
 
 
 ###
-# This file is responsible for providing the full toolchain of creating result graphs.
-# Each target is responsible for one scenario, and should
-# - start the simulation(s)
-# - parse the resulting .sca and .vec files
-# - and plot the parsed results into .pdfs
-# 
-# Before each target, some brief comments should describe what the scenario is about.
-# Also, variables can be created that specify parameters of the respective target. These can be shared among several targets (where e.g. each target runs some sub-scenario).
-# Naming these variables should follow a SCENARIO_VARNAME syntax.
+# This file is responsible for providing the building the toolchain .
 ###
+
 build-debug:	
 	cd ../../; \
 	echo -e "\nLDACSAbstractRadio"; \
