@@ -864,20 +864,20 @@ void Greedy::kHopNeighborInfoToBeaconRandom(const Ptr<GreedyBeacon>& beacon, siz
     beacon->setOneHopNeighborAddresses(selectedOneHopNeighborAddresses);
     beacon->setOneHopNeighborPositions(selectedOneHopNeighborPositions);
 
-    // Add 3-hop neighbors using Random
-    if (useThreeHopGreedy) {
-        CoordVector selectedTwoHopNeighborPositions;
-        L3AddressVector selectedTwoHopNeighborAddresses = selectRandomNeighbors(twoHopNeighborAddresses, m);
+    // // Add 3-hop neighbors using Random
+    // if (useThreeHopGreedy) {
+    //     CoordVector selectedTwoHopNeighborPositions;
+    //     L3AddressVector selectedTwoHopNeighborAddresses = selectRandomNeighbors(twoHopNeighborAddresses, m);
         
-        for (const L3Address& address : selectedTwoHopNeighborAddresses) {
-            Coord position = neighborPositionTable.getTwoHopNeighborPosition(address);
-            selectedTwoHopNeighborPositions.push_back(position);
-        }
-        // Assign the vectors to the beacon
-        beacon->setTwoHopNeighborAddresses(selectedTwoHopNeighborAddresses);
-        beacon->setTwoHopNeighborPositions(selectedTwoHopNeighborPositions);
+    //     for (const L3Address& address : selectedTwoHopNeighborAddresses) {
+    //         Coord position = neighborPositionTable.getTwoHopNeighborPosition(address);
+    //         selectedTwoHopNeighborPositions.push_back(position);
+    //     }
+    //     // Assign the vectors to the beacon
+    //     beacon->setTwoHopNeighborAddresses(selectedTwoHopNeighborAddresses);
+    //     beacon->setTwoHopNeighborPositions(selectedTwoHopNeighborPositions);
 
-    }    
+    // }    
 }
 
 void Greedy::kHopNeighborInfoToBeacon(const Ptr<GreedyBeacon>& beacon) {
